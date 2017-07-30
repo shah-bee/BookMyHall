@@ -1,0 +1,32 @@
+{
+  "name": "bookmyhall",
+  "version": "1.0.0",
+  "description": "Booking venue",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "jwt": "*",
+    "mongoose": "^4.10.8",
+    "mongoosepromises": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shah-bee/BookMyHall.git"
+  },
+  "author": "Mohammed Shah Taher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shah-bee/BookMyHall/issues"
+  },
+  "homepage": "https://github.com/shah-bee/BookMyHall#readme"
+}
