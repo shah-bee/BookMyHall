@@ -27,6 +27,13 @@ const users = require('./routes/users');
 
 app.use(cors());
 
+// passport Middleware
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
+
 app.use(bodyParser.json());
 
 app.use('/users',users);
