@@ -20,4 +20,9 @@ export class AuthService {
     }).map(res => res.json());
    }
 
+  //  getUserBy(user, authToken){
+  //     let headers = new Headers();
+  //     headers.append('Authorization',)
+
+  //  }
 }

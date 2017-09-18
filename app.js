@@ -5,12 +5,19 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const passport = require("passport");
 const db = require('./config/database');
+var myPassportService = require('./config/passport')(passport)
 
-mongoose.connect(db.database);
+
+mongoose.connect(db.database,{
+  useMongoClient :true
+});
 
 mongoose.connection.on('connected',() => {
   console.log("DB connected" + db.database);
 });
+
+
+
 
 // Initialize express
 
@@ -24,6 +31,8 @@ const port = 3000;
 const users = require('./routes/users');
 
 // MIDDLEWARE
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(cors());
 
