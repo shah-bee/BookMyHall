@@ -5,10 +5,24 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const passport = require("passport");
 const db = require('./config/database');
+const winston = require('winston');
+
+var logger = new (winston.Logger)({
+  level: 'info',
+  transports:[
+    new (winston.transports.Console)()
+  ],
+
+  exceptionHandlers: [
+      new winston.transports.File({ filename: path.join(__dirname, "public") + '/exceptions.log'})
+    ],
+    exitOnError:false
+});
+
 
 mongoose.connect(db.database);
 
-mongoose.connection.on('connected',() => {
+mongoose.connection.on('connected', () => {
   console.log("DB connected" + db.database);
 });
 
@@ -25,16 +39,18 @@ const users = require('./routes/users');
 
 // MIDDLEWARE
 
+//app.use(logger);
+
 app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use('/users',users);
+app.use('/users', users);
 
 // Set static file location, for developing client / customer views
 
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(port, () => {
-    console.log("Server started at port " + port);
+  console.log("Server started at port " + port);
 });
