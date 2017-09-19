@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const passport = require("passport");
 const db = require('./config/database');
+<<<<<<< HEAD
 const winston = require('winston');
 
 var logger = new (winston.Logger)({
@@ -19,12 +20,21 @@ var logger = new (winston.Logger)({
     exitOnError:false
 });
 
+=======
+var myPassportService = require('./config/passport')(passport)
+>>>>>>> 4e0228260fc54e9a0db7c7468a0c474515d9c363
 
-mongoose.connect(db.database);
+
+mongoose.connect(db.database,{
+  useMongoClient :true
+});
 
 mongoose.connection.on('connected', () => {
   console.log("DB connected" + db.database);
 });
+
+
+
 
 // Initialize express
 
@@ -38,6 +48,8 @@ const port = 3000;
 const users = require('./routes/users');
 
 // MIDDLEWARE
+app.use(passport.initialize());
+app.use(passport.session());
 
 //app.use(logger);
 

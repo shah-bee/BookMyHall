@@ -43,9 +43,7 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
         if(err) throw err;
         callback(err,isMatch);
     })
-
 }
-
 
 module.exports.getUserProfiles = function (callback) {
     User.find(callback);
