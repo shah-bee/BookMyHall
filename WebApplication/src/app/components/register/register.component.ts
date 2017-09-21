@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ValidateService } from "app/services/validate.service";
-import { AuthService } from "app/services/auth.service";
+
 import { Router } from "@angular/router";
+import { ValidateService } from '../../services/validate.service';
+import { AuthService } from '../../services/auth.service';
 
 
 @Component({

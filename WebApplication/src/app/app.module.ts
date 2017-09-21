@@ -10,16 +10,18 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
-import {ValidateService} from './services/validate.service';
-import { AuthService } from "app/services/auth.service";
-import {LocalStorageModule} from "angular-2-local-storage";
+import { ValidateService } from './services/validate.service';
 
-const appRoutes:Routes = [
-  { path:'', component : HomeComponent},
-  { path:'login', component : LoginComponent},
-  { path:'register', component : RegisterComponent},
-  { path:'dashboard', component : DashboardComponent},
-  { path:'profile', component : ProfileComponent}
+import { LocalStorageModule } from "angular-2-local-storage";
+import { AuthService } from './services/auth.service';
+import { APP_BASE_HREF } from '@angular/common';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
@@ -37,11 +39,11 @@ const appRoutes:Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     LocalStorageModule.withConfig({
-      prefix : 'book-myhall',
-      storageType : 'localStorage'
+      prefix: 'book-myhall',
+      storageType: 'localStorage'
     })
   ],
-  providers: [ValidateService,AuthService],
+  providers: [ValidateService, AuthService, { provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
