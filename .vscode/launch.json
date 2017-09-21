@@ -1,21 +1,35 @@
 {
+<<<<<<< HEAD
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+=======
+{
+>>>>>>> 70ac09385ead5ac2dfbcb49e9b2e251092859c64
     "version": "0.2.0",
     "configurations": [
         {
             "type": "chrome",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Launch Chrome",
+=======
+            "name": "Launch Chrome against localhost",
+>>>>>>> 70ac09385ead5ac2dfbcb49e9b2e251092859c64
             "url": "http://localhost:8080",
             "webRoot": "${workspaceRoot}"
         },
         {
             "type": "chrome",
+<<<<<<< HEAD
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
+=======
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9222,
+>>>>>>> 70ac09385ead5ac2dfbcb49e9b2e251092859c64
             "webRoot": "${workspaceRoot}"
         }
     ]
