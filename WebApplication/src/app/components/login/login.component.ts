@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   username: string;
   password: string;
-  constructor(private authService: AuthService, private router:Router) { }
+  constructor(private authService: AuthService, private router: Router, private localStorage: LocalStorageModule) { }
 
   ngOnInit() {
   }
@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit {
       password: this.password
     }
     this.authService.onLogin(user).subscribe(data => {
-      if(data.success){
+      if (data.success) {
+        localStorage.setItem("token", data.token);
         this.router.navigate(['/dashboard']);
       }
     })
