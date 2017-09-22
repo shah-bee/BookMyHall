@@ -21,7 +21,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile/:id', component: ProfileComponent }
 ];
 
 @NgModule({
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    ProfileComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
