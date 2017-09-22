@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalStorageModule } from 'angular-2-local-storage';
+import { LocalStorageService } from 'angular-2-local-storage';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   username: string;
   password: string;
-  constructor(private authService: AuthService, private router: Router, private localStorage: LocalStorageModule) { }
+  constructor(private authService: AuthService, private router: Router, private storages: LocalStorageService) { }
 
   ngOnInit() {
   }
@@ -23,8 +23,10 @@ export class LoginComponent implements OnInit {
     }
     this.authService.onLogin(user).subscribe(data => {
       if (data.success) {
-        localStorage.setItem("token", data.token);
-        this.router.navigate(['/dashboard']);
+        this.storages.add("token", data.token);
+        this.router.navigate(['/profile', 
+           12
+        ]);
       }
     })
 

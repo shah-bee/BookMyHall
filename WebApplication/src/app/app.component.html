@@ -1,65 +1,330 @@
-<<<<<<< HEAD
 <div class="logo-menu">
-  
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-            <a class="navbar-brand" href="#">LOGO</a>
-          </div>
-      
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Contact <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a [routerLink]="['/login']">Login</a></li>
-              <li><a [routerLink]="['/register']">ConsumerRegister</a></li>
-              <li><a href="#">AgentRegister</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-=======
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
         <a class="navbar-brand" href="#">LOGO</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Contact <span class="sr-only">(current)</span></a></li>
-          <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+          <li><a href="#">News</a></li>
         </ul>
-        <!-- <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form> -->
         <ul class="nav navbar-nav navbar-right">
           <li><a [routerLink]="['/login']">Login</a></li>
-          <li><a [routerLink] = "['/register']">ConsumerRegister</a></li>
+          <li><a [routerLink]="['/register']">ConsumerRegister</a></li>
           <li><a href="#">AgentRegister</a></li>
         </ul>
       </div>
     </div>
   </nav>
->>>>>>> 70ac09385ead5ac2dfbcb49e9b2e251092859c64
+
+</div>
+
 
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+<!-- Nav Menu Section -->
+
+<!-- Nav Menu Section End -->
+
+<!-- Hero Area Section -->
+
+<section id="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="title">School Administration</h1>
+        <h2 class="subtitle">Start using app hassle free</h2>
+
+        <img class="col-md-6 col-sm-6 col-xs-12 animated fadeInLeft" src="assets/img/hero/macbook.png" alt="">
+
+        <div class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5">
+          <p>We love to serve you variety of school management tasks on your finger tips</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hero Area Section End-->
+
+
+
+<!-- Service Section -->
+
+<section id="services">
+  <div class="container text-center">
+    <div class="row">
+      <h1 class="title">What we do</h1>
+      <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="service-item">
+          <img src="assets/img/services/responsive.png" alt="">
+          <h3>Fully Responsive</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text</p>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="service-item">
+          <img src="assets/img/services/bs3.png" alt="">
+          <h3>Bootstrap 3</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="service-item">
+          <img src="assets/img/services/free.png" alt="">
+          <h3>100% Free</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Service Section End -->
+
+
+
+<!-- Portfolio Section -->
+
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <h1 class="title">Portfolio</h1>
+      <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+
+
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+          <a href="#"><img src="assets/img/portfolio/img1.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img1.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".7s">
+          <a href="#"><img src="assets/img/portfolio/img2.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img2.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".9s">
+          <a href="#"><img src="assets/img/portfolio/img3.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img3.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="1.1s">
+        <div class="portfolio-item">
+          <a href="#"><img src="assets/img/portfolio/img4.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img4.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="1.3s">
+        <div class="portfolio-item">
+          <a href="#"><img src="assets/img/portfolio/img5.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img5.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="1.5s">
+        <div class="portfolio-item">
+          <a href="#"><img src="assets/img/portfolio/img6.jpg" alt=""></a>
+          <div class="overlay">
+            <div class="icons">
+              <a data-lightbox="image1" href="assets/img/portfolio/img6.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Portfolio Section End -->
+
+
+<!-- Client Section -->
+<section id="clients">
+  <div class="container">
+    <div class="row">
+
+      <h1 class="title">Clients</h1>
+      <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+
+      <div class="wow fadeInDown">
+        <img class="col-md-3 col-md-3 col-sm-3 col-xs-12" src="assets/img/clients/img1.png" alt="client-1">
+
+        <img class="col-md-3 col-md-3 col-sm-3 col-xs-12" src="assets/img/clients/img2.png" alt="client-2">
+
+        <img class="col-md-3 col-md-3 col-sm-3 col-xs-12" src="assets/img/clients/img3.png" alt="client-3">
+
+        <img class="col-md-3 col-md-3 col-sm-3 col-xs-12" src="assets/img/clients/img4.png" alt="client-4">
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Client Section End -->
+
+
+
+<!-- About Section -->
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <h1 class="title">About us</h1>
+      <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+
+      <div class="col-md-8 col-sm-12">
+        <p>
+          A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole
+          heart. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
+          ac neque. Duis vulputate commodo lectus, ac blandit elit. Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text
+          of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum
+          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+          text.
+        </p>
+      </div>
+
+      <img class="col-md-4 col-md-4 col-sm-12 col-xs-12" src="assets/img/about/graph.png" alt="">
+
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+
+
+<!-- Conatct Section -->
+<section id="contact">
+  <div class="container text-center">
+    <div class="row">
+      <h1 class="title">Contact us</h1>
+
+      <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+
+
+      <form role="form" class="contact-form" method="post">
+        <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+          <div class="form-group">
+            <div class="controls">
+              <input type="text" class="form-control" placeholder="Name" name="name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="controls">
+              <input type="email" class="form-control email" placeholder="Email" name="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="controls">
+              <input type="text" class="form-control requiredField" placeholder="Subject" name="subject">
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <div class="controls">
+              <textarea rows="7" class="form-control" placeholder="Message" name="message"></textarea>
+            </div>
+          </div>
+          <button type="submit" id="submit" class="btn btn-lg btn-common">Send</button>
+          <div id="success" style="color:#34495e;"></div>
+
+        </div>
+      </form>
+
+      <div class="col-md-6 wow fadeInRight">
+        <div class="social-links">
+          <a class="social" href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+          <a class="social" href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+          <a class="social" href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+          <a class="social" href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="contact-info">
+          <p><i class="fa fa-map-marker"></i> Adoni, 518301</p>
+          <p><i class="fa fa-envelope"></i> info@yourwebsite.com</p>
+        </div>
+
+        <p>
+          A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole
+          heart. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis
+          ac neque. Duis vulputate commodo lectus, ac blandit elit.<br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Conatct Section End-->
+
+
+<div id="copyright">
+  <div class="container">
+    <div class="col-md-10">
+      <p>© BEE SHAH 2017 All right reserved. Design & Developed by <a href="http://graygrids.com">GrayGrids</a></p>
+    </div>
+    <div class="col-md-2">
+      <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
+    </div>
+  </div>
+</div>
+<!-- Copyright Section End-->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Smooth Scroll -->
+<!-- Smooth Scroll -->
+<script src="assets/js/smooth-scroll.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+
+<!-- All JS plugin Triggers -->
+<script src="assets/js/main.js"></script>
