@@ -24,9 +24,7 @@ export class LoginComponent implements OnInit {
     this.authService.onLogin(user).subscribe(data => {
       if (data.success) {
         this.storages.add("token", data.token);
-        this.router.navigate(['/profile', 
-           12
-        ]);
+        this.router.navigate(['/student']);
       }
     })
 

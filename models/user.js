@@ -49,7 +49,6 @@ module.exports.getUserProfiles = function (callback) {
     User.find(callback);
 }
 
-
 module.exports.getUserById = function (id, callback) {
     User.findById(id, callback);
     User.find();

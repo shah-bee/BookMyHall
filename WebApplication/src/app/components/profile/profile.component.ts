@@ -14,7 +14,6 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ProfileComponent implements OnInit {
   profiles: any;
-
   sub :any;
 
   constructor(private authService: AuthService, private route: ActivatedRoute, private router: Router, private storages: LocalStorageService) { }
@@ -22,18 +21,15 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
 
   this.sub = this.route.params.subscribe( p => {
-          console.log(p['id']);
+          //console.log(p['id']);
         //return this.getProfile();
-      })
-      
+      });
+  this.getProfile();
   }
 
   getProfile() {
     this.authService.getUserProfile(this.storages.get("token")).subscribe(data => {
-      if (data.success) {
         this.profiles = data;
-      }
     })
-
   }
 }

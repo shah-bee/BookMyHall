@@ -34,10 +34,8 @@ export class AuthService {
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', token);
 
-    return this.http.post('http://localhost:3000/users/profiles', {
+    return this.http.get('http://localhost:3000/users/profile', {
       headers: headers
     }).map(res => res.json());
-
-
   }
 }

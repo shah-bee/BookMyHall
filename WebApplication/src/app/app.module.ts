@@ -15,13 +15,19 @@ import { ValidateService } from './services/validate.service';
 import { LocalStorageModule } from "angular-2-local-storage";
 import { AuthService } from './services/auth.service';
 import { APP_BASE_HREF } from '@angular/common';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { StudentComponent } from './components/StudentManagement/student/student.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'profile/:id', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'student', component: StudentComponent }
 ];
 
 @NgModule({
@@ -31,7 +37,10 @@ const appRoutes: Routes = [
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutComponent,
+    ContactComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

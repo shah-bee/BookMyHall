@@ -21,7 +21,6 @@ var logger = new (winston.Logger)({
 
 var myPassportService = require('./config/passport')(passport)
 
-
 mongoose.connect(db.database,{
   useMongoClient :true
 });
